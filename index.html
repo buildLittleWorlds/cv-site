@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarice Moo - Comprehensive CV</title>
+    <title>Your Name - Personal Page</title>
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
         }
-        body, h1, h2, h3, p, ul {
+        body, h1, h2, p {
             margin: 0;
             padding: 0;
         }
@@ -19,292 +19,75 @@
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            min-height: 100vh;
         }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #4a4a4a;
-            color: #ecf0f1;
+        .content {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .image-container {
+            flex: 1;
+            text-align: right;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         h1 {
             font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            font-weight: 300;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
             color: #4a4a4a;
-            border-bottom: 2px solid #9b59b6;
-            padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        .experience-item, .education-item, .project-item, .publication-item {
+        p {
             margin-bottom: 20px;
+            font-size: 1.1em;
         }
-        .experience-item h3, .education-item h3, .project-item h3, .publication-item h3 {
-            color: #8e44ad;
-        }
-        .date {
-            font-style: italic;
-            color: #7f8c8d;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-        .skills li, .interests li {
+        .cv-link {
             display: inline-block;
             background-color: #9b59b6;
             color: #fff;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 3px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
             transition: background-color 0.3s ease;
         }
-        .skills li:hover, .interests li:hover {
+        .cv-link:hover {
             background-color: #8e44ad;
-            cursor: pointer;
-        }
-        .contact-info {
-            text-align: center;
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        .contact-info a {
-            color: #9b59b6;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .two-column {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .two-column > div {
-            width: 48%;
         }
         @media (max-width: 768px) {
-            .two-column > div {
+            .container {
+                flex-direction: column-reverse;
+            }
+            .content, .image-container {
+                flex: none;
                 width: 100%;
+                padding: 0;
+                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Clarice Moo</h1>
-            <p class="subtitle">Senior English Major | Aspiring Writer and Editor</p>
-        </header>
-
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <p>Dedicated senior English major with a passion for literature, creative writing, and digital media. Experienced in copy editing, content creation, and academic research. Seeking to leverage strong communication, analytical, and creative skills in a publishing, media, or education role.</p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Bachelor of Arts in English, Minor in Digital Media Studies</h3>
-                <p class="date">Evergreen State University | Expected Graduation: May 2025</p>
-                <p>Relevant Coursework: Creative Writing, Literary Analysis, Linguistics, Professional Writing, Digital Storytelling, Web Content Management</p>
-                <p>GPA: 3.8/4.0 | Dean's List: All Semesters</p>
-            </div>
-            <div class="education-item">
-                <h3>Study Abroad Program</h3>
-                <p class="date">University of Edinburgh, Scotland | Fall Semester 2023</p>
-                <p>Focused on Scottish Literature and Creative Writing</p>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="experience-item">
-                <h3>Copy Editing Intern</h3>
-                <p class="date">Urban Pulse Magazine | June 2024 - August 2024</p>
-                <ul>
-                    <li>Assisted in proofreading and editing articles for grammar, style, and clarity</li>
-                    <li>Collaborated with writers to refine content and ensure adherence to house style guide</li>
-                    <li>Contributed to the development of SEO-friendly headlines and subheadings</li>
-                    <li>Participated in weekly editorial meetings and pitched story ideas</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Writing Center Tutor</h3>
-                <p class="date">Evergreen State University | September 2023 - Present</p>
-                <ul>
-                    <li>Provide one-on-one writing assistance to undergraduate and graduate students</li>
-                    <li>Offer guidance on essay structure, argumentation, and citation styles</li>
-                    <li>Conduct workshops on academic writing and research methods</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Social Media Coordinator</h3>
-                <p class="date">Evergreen State University English Department | January 2024 - Present</p>
-                <ul>
-                    <li>Manage department's social media accounts on Instagram, Twitter, and Facebook</li>
-                    <li>Create engaging content to promote department events and student achievements</li>
-                    <li>Analyze social media metrics to improve engagement and reach</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Office Assistant</h3>
-                <p class="date">Greenleaf Accounting Firm | May 2023 - August 2023</p>
-                <ul>
-                    <li>Managed front desk operations, including greeting clients and handling phone inquiries</li>
-                    <li>Organized and maintained digital and physical filing systems</li>
-                    <li>Prepared professional correspondence and reports using Microsoft Office suite</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Retail Associate</h3>
-                <p class="date">BookNook Emporium | June 2022 - August 2022</p>
-                <ul>
-                    <li>Provided excellent customer service in a fast-paced bookstore environment</li>
-                    <li>Assisted customers with book recommendations and special orders</li>
-                    <li>Maintained an organized and visually appealing store display</li>
-                    <li>Participated in planning and executing author events and reading groups</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Academic and Creative Projects</h2>
-            <div class="project-item">
-                <h3>Undergraduate Thesis</h3>
-                <p class="date">January 2024 - Present</p>
-                <p>"The Evolution of Narrative Techniques in 21st Century Young Adult Fiction"</p>
-                <ul>
-                    <li>Conducting extensive research on contemporary YA literature</li>
-                    <li>Analyzing narrative structures and their impact on reader engagement</li>
-                    <li>Scheduled for presentation at the Undergraduate Research Symposium, Spring 2025</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>Literary Magazine Editor</h3>
-                <p class="date">Evergreen Literary Review | September 2023 - Present</p>
-                <ul>
-                    <li>Select and edit submissions for bi-annual student-run literary magazine</li>
-                    <li>Collaborate with design team on layout and visual elements</li>
-                    <li>Organize launch events and readings for each issue</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>Publications and Presentations</h2>
-            <div class="publication-item">
-                <h3>"The Role of Social Media in Modern Storytelling"</h3>
-                <p class="date">Digital Humanities Quarterly, Fall 2024 (Forthcoming)</p>
-            </div>
-            <div class="publication-item">
-                <h3>"Echoes of Shakespeare in Contemporary Fantasy Literature"</h3>
-                <p class="date">Presented at the Undergraduate Literature Conference, Evergreen State University, Spring 2024</p>
-            </div>
-        </section>
-
-        <section id="skills-and-interests">
-            <h2>Skills and Interests</h2>
-            <div class="two-column">
-                <div>
-                    <h3>Skills</h3>
-                    <ul class="skills">
-                        <li>Copy Editing</li>
-                        <li>Proofreading</li>
-                        <li>Creative Writing</li>
-                        <li>Content Creation</li>
-                        <li>Academic Writing</li>
-                        <li>Research Methods</li>
-                        <li>Social Media Management</li>
-                        <li>SEO Basics</li>
-                        <li>Microsoft Office Suite</li>
-                        <li>Adobe Creative Suite</li>
-                        <li>WordPress</li>
-                        <li>Public Speaking</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Interests</h3>
-                    <ul class="interests">
-                        <li>Contemporary Literature</li>
-                        <li>Digital Storytelling</li>
-                        <li>Film Adaptation</li>
-                        <li>Literary Translation</li>
-                        <li>Poetry Slams</li>
-                        <li>Creative Writing Workshops</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>English (Native)</li>
-                <li>Spanish (Intermediate)</li>
-                <li>French (Basic)</li>
-            </ul>
-        </section>
-
-        <section id="volunteer">
-            <h2>Volunteer Experience</h2>
-            <div class="experience-item">
-                <h3>Literacy Tutor</h3>
-                <p class="date">Greenville Public Library | September 2022 - Present</p>
-                <ul>
-                    <li>Assist adult learners in improving reading and writing skills</li>
-                    <li>Develop personalized lesson plans for diverse learning needs</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="awards">
-            <h2>Awards and Honors</h2>
-            <ul>
-                <li>Outstanding English Major Award, Evergreen State University, 2024</li>
-                <li>First Place, Annual Creative Writing Contest, Evergreen State University, 2023</li>
-                <li>Sigma Tau Delta (International English Honor Society), Inducted 2023</li>
-            </ul>
-        </section>
-
-        <section id="professional-memberships">
-            <h2>Professional Memberships</h2>
-            <ul>
-                <li>National Council of Teachers of English (NCTE), Student Member</li>
-                <li>Association of Writers & Writing Programs (AWP), Student Member</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:clarice.moo@email.com">clarice.moo@email.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/claricemoo" target="_blank">linkedin.com/in/claricemoo</a></p>
-            <p>Personal Website: <a href="https://www.claricemoo.com" target="_blank">www.claricemoo.com</a></p>
-            <p>Phone: (555) 123-4567</p>
-        </section>
+        <div class="content">
+            <h1>Your Name</h1>
+            <p>Welcome to my personal page! I'm a senior English major with a passion for literature, creative writing, and digital media. My academic journey has equipped me with strong communication, analytical, and creative skills, which I've applied in various roles from copy editing to content creation.</p>
+            <p>Through my experiences in retail, office administration, and internships, I've developed a versatile skill set that combines attention to detail with creative problem-solving. I'm excited about the possibilities at the intersection of traditional literature and digital storytelling.</p>
+            <p>Feel free to explore my CV to learn more about my academic and professional journey!</p>
+            <a href="cv.html" class="cv-link">View My CV</a>
+        </div>
+        <div class="image-container">
+            <img src="tech-kid.jpeg" alt="Tech-savvy student" />
+        </div>
     </div>
-
-    <script>
-        // Add a subtle interactive element
-        document.querySelectorAll('.skills li, .interests li').forEach(item => {
-            item.addEventListener('click', () => {
-                item.style.transform = 'scale(1.1)';
-                setTimeout(() => item.style.transform = 'scale(1)', 200);
-            });
-        });
-    </script>
 </body>
 </html>
