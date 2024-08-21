@@ -3,91 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Page</title>
+    <title>Clarice Moo - English Major & Aspiring Editor</title>
     <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
         body {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
         }
-        .content {
-            flex: 1;
-            padding-right: 40px;
+        header {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+        nav {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .bio {
+            padding-right: 20px;
         }
         .image-container {
-            flex: 1;
-            text-align: right;
+            text-align: center;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 2.5em;
-            color: #4a4a4a;
-            margin-bottom: 20px;
+        .resume-link {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 20px;
         }
-        p {
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-        .cv-link {
+        .resume-link a {
             display: inline-block;
-            background-color: #9b59b6;
-            color: #fff;
             padding: 10px 20px;
+            background-color: #0066cc;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .cv-link:hover {
-            background-color: #8e44ad;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column-reverse;
-            }
-            .content, .image-container {
-                flex: none;
-                width: 100%;
-                padding: 0;
-                margin-bottom: 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <h1>Your Name</h1>
-            <p>Welcome to my personal page! I'm a senior English major with a passion for literature, creative writing, and digital media. My academic journey has equipped me with strong communication, analytical, and creative skills, which I've applied in various roles from copy editing to content creation.</p>
-            <p>Through my experiences in retail, office administration, and internships, I've developed a versatile skill set that combines attention to detail with creative problem-solving. I'm excited about the possibilities at the intersection of traditional literature and digital storytelling.</p>
-            <p>Feel free to explore my CV to learn more about my academic and professional journey!</p>
-            <a href="cv.html" class="cv-link">View My CV</a>
-        </div>
-        <div class="image-container">
-            <img src="kid-in-park.png" alt="Tech-savvy student" />
-        </div>
+    <header>
+        <h1>Clarice Moo</h1>
+        <p>English Major & Aspiring Editor</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
+    <section class="bio">
+        <h2>Welcome to My World of Words!</h2>
+        <p>Hey there! I'm Clarice, a soon-to-be English graduate with a passion for turning chaotic drafts into polished prose. When I'm not busy editing articles for Riverside Monthly Magazine, you might find me lost in the pages of a good book at BookNook Emporium or crafting the perfect latte to fuel my late-night writing sessions.</p>
+        <p>My superpower? Spotting a misplaced comma from a mile away! Whether it's MLA or Chicago style, I've got you covered. Join me on this exciting journey as I navigate the world of words, one perfectly crafted sentence at a time.</p>
+    </section>
+
+    <div class="image-container">
+        <img src="tech-kid-in-park.png" alt="tech kid in park">
+    </div>
+
+    <div class="resume-link">
+        <a href="resume.html">View My Resume</a>
     </div>
 </body>
 </html>
